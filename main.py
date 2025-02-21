@@ -8,7 +8,7 @@ class App:
 
     def __init__(self):
         pg.init()
-        pg.display.set_mode((640, 400), pg.OPENGL | pg.DOUBLEBUF)
+        pg.display.set_mode((640, 480), pg.OPENGL | pg.DOUBLEBUF)
         self.clock = pg.time.Clock()
         glClearColor(0.1, 0.2, 0.2, 1)
         self.shader = self.createShader("shaders/vertex.txt", "shaders/fragment.txt")
